@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon"
+        href="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription01&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=Hoodie&clotheColor=PastelBlue&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Dark"
+        type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <body>
+        <header>
+            <div class="logo">Milan Fataniya's Portfolio</div>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="#home"
+                            style="color: inherit; text-decoration: none;">Home</a>
+                    </li>
+                    <li><i class="fas fa-user"></i> <a href="#about"
+                            style="color: inherit; text-decoration: none;">About</a></li>
+                    <li><i class="fas fa-code"></i> <a href="#skills"
+                            style="color: inherit; text-decoration: none;">Skills</a></li>
+                    <li><i class="fas fa-briefcase"></i> <a href="#projects"
+                            style="color: inherit; text-decoration: none;">Projects</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="#contact"
+                            style="color: inherit; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h1>Milan Fataniya</h1>
+                <p>Aspiring MCA student passionate about software development, web technologies, and problem-solving.
+                </p>
+
+            </div>
+            <div class="upload-wrapper">
+                <img src="ram.jpg"
+                    alt="Cartoon Avatar of Milan Fataniya" class="hero-img" id="profileImage" />
+
+                <input type="file" id="uploadInput" accept="image/*" style="display:none" />
+              
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="card">
+                <h3>About Me</h3>
+                <p>
+                    Pursuing MCA at Saurashtra University with a focus on software development and computer science.<br>
+                    Skilled in Java, Android and SQL, with practical experience in application design and
+                    problem-solving. <br> Committed to continuous learning and delivering efficient, scalable solutions.
+                    <br>Ready to contribute to the IT industry with strong technical skills and dedication.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="programming-languages">
+            <div class="card">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Android</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>AI Integration</li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="card">
+                <h2>Projects</h2><br><br>
+                <img src="android.png"><br><br>
+                <h3>Android: Quiz App</h3>
+                <ul>
+                    <li>+ 50-50: Eliminates two incorrect answers to help users guess better.</li>
+                    <li>+ Swap Question: Allows swapping a difficult question with a new one.</li>
+                    <li>+ Hint Tutorial: Provides guidance on how to play and use lifelines.</li>
+                    <li>+ Result with Circular ProgressBar: Displays user’s score visually with an animated circular
+                        progress bar.</li>
+                </ul><br>
+                <img src="c.png">
+                <br><br>
+                <h3>C# Project: Quiz App</h3>
+                <ul>
+                    <li>+ Hint Tutorial: Helps users understand the app and game mechanics.</li>
+                    <li>+ Result with Circular ProgressBar: Shows results in a clear, graphical way.</li>
+                    <li>+ Does not include 50-50 or Swap Question lifelines, focusing on a simplified user experience.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="contact" class="fade-section">
+            <div class="card">
+                <h2>Contact Me</h2>
+                <form onsubmit="submitForm(event)">
+                    <div class="input-icon">
+                        <input type="text" placeholder="Your Name" required />
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input-icon">
+                        <input type="email" placeholder="Your Email" required />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="input-icon">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button class="btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/milan-fataniya-56bb35368/" target="_blank" aria-label="LinkedIn"
+                    style="--delay: 0.1s">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/milanfataniya" target="_blank" aria-label="GitHub"
+                    style="--delay: 0.3s">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:your.milanfataniya2025@gmail.com" aria-label="Email" style="--delay: 0.5s">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+            </div>
+            <button onclick="scrollToTop()" id="topBtn" title="Go to top">Go to Top</button>
+
+            <div>&copy; 2025 Milan Fataniya. All rights reserved.</div>
+        </footer>
+
+    </body>
+
+</html>
